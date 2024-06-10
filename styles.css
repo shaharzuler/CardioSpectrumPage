@@ -2,15 +2,16 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #333;
     padding: 2rem 0;
     text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
 header h1 {
@@ -20,10 +21,12 @@ header h1 {
 
 header p {
     font-size: 1.25rem;
+    margin: 0.5rem 0 0;
 }
 
 nav {
-    background: #444;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 nav ul {
@@ -39,10 +42,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     padding: 1rem 0;
     display: block;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #333;
 }
 
 .container {
@@ -67,13 +74,11 @@ pre {
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #333;
     text-align: center;
     padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border-top: 1px solid #ddd;
 }
 
 @media (max-width: 768px) {
