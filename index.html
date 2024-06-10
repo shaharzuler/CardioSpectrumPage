@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CardioSpectrum</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CardioSpectrum</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>CardioSpectrum</h1>
-            <p>Comprehensive Myocardium Motion Analysis with 3D Deep Learning and Geometric Insights</p>
-        </div>
-    </header>
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#description">Description</a></li>
-                <li><a href="#installation">Installation</a></li>
-                <li><a href="#demo">Demo</a></li>
-                <li><a href="#datasets">Datasets</a></li>
-                <li><a href="#citation">Citation</a></li>
-            </ul>
-        </div>
-    </nav>
-    <main>
-        <section id="description" class="container">
-            <h2>Description</h2>
-            <p>The ability to map left ventricle (LV) myocardial motion using computed tomography angiography (CTA) is essential to diagnosing cardiovascular conditions and guiding interventional procedures. Our project presents a comprehensive approach to address this problem using 3D optical flow techniques and Functional Maps (FMs).</p>
-        </section>
-        <section id="installation" class="container">
-            <h2>Installation</h2>
-            <pre><code>git clone https://github.com/shaharzuler/cardio_volume_skewer.git
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">CardioSpectrum</h1>
+      <p class="header__subtitle">Comprehensive Myocardium Motion Analysis with 3D Deep Learning and Geometric Insights</p>
+    </div>
+  </header>
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#description" class="nav__link">Description</a></li>
+        <li class="nav__item"><a href="#installation" class="nav__link">Installation</a></li>
+        <li class="nav__item"><a href="#demo" class="nav__link">Demo</a></li>
+        <li class="nav__item"><a href="#datasets" class="nav__link">Datasets</a></li>
+        <li class="nav__item"><a href="#citation" class="nav__link">Citation</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="main">
+    <section id="description" class="section">
+      <div class="container">
+        <h2 class="section__title">Description</h2>
+        <p>The ability to map left ventricle (LV) myocardial motion using computed tomography angiography (CTA) is essential to diagnosing cardiovascular conditions and guiding interventional procedures. Our project presents a comprehensive approach to address this problem using 3D optical flow techniques and Functional Maps (FMs).</p>
+      </div>
+    </section>
+    <section id="installation" class="section">
+      <div class="container">
+        <h2 class="section__title">Installation</h2>
+        <pre><code>git clone https://github.com/shaharzuler/cardio_volume_skewer.git
 cd cardio_volume_skewer
 pip install -r requirements.txt
 python setup.py install</code></pre>
-        </section>
-        <section id="demo" class="container">
-            <h2>Demo</h2>
-            <p>See our model in action:</p>
-            <img src="assets/demo_image.png" alt="CardioSpectrum Demo">
-            <video controls>
-                <source src="assets/demo_video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
-        <section id="datasets" class="container">
-            <h2>Datasets</h2>
-            <p>Our model is trained on publicly available datasets. You can access the data we used from the following sources:</p>
-            <ul>
-                <li><a href="https://arxiv.org/abs/2406.01040">Synthetic Data for Myocardium Deformation Analysis</a></li>
-                <li><a href="https://github.com/shaharzuler/cardio_volume_skewer">GitHub Repository for Data</a></li>
-            </ul>
-        </section>
-        <section id="citation" class="container">
-            <h2>Citation</h2>
-            <pre><code>@article{zuler2024synthetic,
+      </div>
+    </section>
+    <section id="demo" class="section">
+      <div class="container">
+        <h2 class="section__title">Demo</h2>
+        <p>See our model in action:</p>
+        <img src="assets/demo_image.png" alt="CardioSpectrum Demo" class="demo__image">
+      </div>
+    </section>
+    <section id="datasets" class="section">
+      <div class="container">
+        <h2 class="section__title">Datasets</h2>
+        <p>Our model is trained on publicly available datasets. You can access the data we used from the following sources:</p>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2406.01040">Synthetic Data for Myocardium Deformation Analysis</a></li>
+          <li><a href="https://github.com/shaharzuler/cardio_volume_skewer">GitHub Repository for Data</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="citation" class="section">
+      <div class="container">
+        <h2 class="section__title">Citation</h2>
+        <pre><code>@article{zuler2024synthetic,
   title={Synthetic Data Generation for 3D Myocardium Deformation Analysis},
   author={Zuler, Shahar and Raviv, Dan},
   journal={arXiv preprint arXiv:2406.01040},
   year={2024}
 }</code></pre>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>© 2024 Shahar Zuler, Dan Raviv</p>
-        </div>
-    </footer>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Shahar Zuler, Dan Raviv</p>
+    </div>
+  </footer>
+  <script src="index.js"></script>
 </body>
 </html>
