@@ -1,79 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CardioSpectrum</title>
-  <link rel="stylesheet" href="index.css">
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Comprehensive Myocardium Motion Analysis with 3D Deep Learning and Geometric Insights.">
+  <meta name="keywords" content="Optical flow, Scene flow, Deep neural networks, Cardiac cycle">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CardioSpectrum: Comprehensive Myocardium Motion Analysis with 3D Deep Learning and Geometric Insights.</title>
+
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4GW49TD698"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4GW49TD698');
+</script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1 class="header__title">CardioSpectrum</h1>
-      <p class="header__subtitle">Comprehensive Myocardium Motion Analysis with 3D Deep Learning and Geometric Insights</p>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CardioSpectrum: Comprehensive Myocardium Motion Analysis with 3D Deep Learning and Geometric Insights</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://il.linkedin.com/in/shahar-zuler">Shahar Zuler</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/shai-tejman-yarden-md-msc-mba-9162749/">Shai Tejman-Yarden</a><sup>2,3,4</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.raviv.sites.tau.ac.il/">Dan Raviv</a><sup>1</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Tel Aviv University</span>
+            <span class="author-block"><sup>2</sup>Faculty of Medicine, Tel Aviv University</span>
+            <span class="author-block"><sup>3</sup>The Edmond J. Safra International Congenital Heart Center, Sheba Medical Center</span>
+            <span class="author-block"><sup>4</sup>The Engineering Medical Research Laboratory, Sheba Medical Center</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/TODO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/TODO2"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/shaharzuler/CardioSpectrum"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/shaharzuler/cardio_volume_skewer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
-  <nav class="nav">
-    <div class="container">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#description" class="nav__link">Description</a></li>
-        <li class="nav__item"><a href="#installation" class="nav__link">Installation</a></li>
-        <li class="nav__item"><a href="#demo" class="nav__link">Demo</a></li>
-        <li class="nav__item"><a href="#datasets" class="nav__link">Datasets</a></li>
-        <li class="nav__item"><a href="#citation" class="nav__link">Citation</a></li>
-      </ul>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+        free-viewpoint
+        portraits.
+      </h2>
     </div>
-  </nav>
-  <main class="main">
-    <section id="description" class="section">
-      <div class="container">
-        <h2 class="section__title">Description</h2>
-        <p>The ability to map left ventricle (LV) myocardial motion using computed tomography angiography (CTA) is essential to diagnosing cardiovascular conditions and guiding interventional procedures. Our project presents a comprehensive approach to address this problem using 3D optical flow techniques and Functional Maps (FMs).</p>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The ability to map left ventricle (LV) myocardial motion using computed tomography angiography (CTA) is essential to diagnosing cardiovascular conditions and guiding interventional procedures.
+            Due to their inherent locality, conventional neural networks typically have difficulty predicting subtle tangential movements, which considerably lessens the level of precision at which myocardium three-dimensional (3D) mapping can be performed.
+            Using 3D optical flow techniques and Functional Maps (FMs), we present a comprehensive approach to address this problem.
+            FMs are known for their capacity to capture global geometric features, thus providing a fuller understanding of 3D geometry.
+            As an alternative to traditional segmentation-based priors, we employ surface-based two-dimensional (2D) constraints derived from spectral correspondence methods.
+            Our 3D deep learning architecture, based on the ARFlow model, is optimized to handle complex 3D motion analysis tasks.
+            By incorporating FMs, we can capture the subtle tangential movements of the myocardium surface precisely, hence significantly improving the accuracy of 3D mapping of the myocardium.
+            The experimental results confirm the effectiveness of this method in enhancing myocardium motion analysis.
+            This approach can contribute to improving cardiovascular diagnosis and treatment.
+          </p>
+        </div>
       </div>
-    </section>
-    <section id="installation" class="section">
-      <div class="container">
-        <h2 class="section__title">Installation</h2>
-        <pre><code>git clone https://github.com/shaharzuler/cardio_volume_skewer.git
-cd cardio_volume_skewer
-pip install -r requirements.txt
-python setup.py install</code></pre>
-      </div>
-    </section>
-    <section id="demo" class="section">
-      <div class="container">
-        <h2 class="section__title">Demo</h2>
-        <p>See our model in action:</p>
-        <img src="assets/demo_image.png" alt="CardioSpectrum Demo" class="demo__image">
-      </div>
-    </section>
-    <section id="datasets" class="section">
-      <div class="container">
-        <h2 class="section__title">Datasets</h2>
-        <p>Our model is trained on publicly available datasets. You can access the data we used from the following sources:</p>
-        <ul>
-          <li><a href="https://arxiv.org/abs/2406.01040">Synthetic Data for Myocardium Deformation Analysis</a></li>
-          <li><a href="https://github.com/shaharzuler/cardio_volume_skewer">GitHub Repository for Data</a></li>
-        </ul>
-      </div>
-    </section>
-    <section id="citation" class="section">
-      <div class="container">
-        <h2 class="section__title">Citation</h2>
-        <pre><code>@article{zuler2024synthetic,
-  title={Synthetic Data Generation for 3D Myocardium Deformation Analysis},
-  author={Zuler, Shahar and Raviv, Dan},
-  journal={arXiv preprint arXiv:2406.01040},
-  year={2024}
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{TODO
 }</code></pre>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <p>© 2024 Shahar Zuler, Dan Raviv</p>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+      <p>
+        Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a
+        href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+      </p>
     </div>
-  </footer>
-  <script src="index.js"></script>
+  </div>
+</div>
+<!--</div>-->
+</footer>
+
 </body>
 </html>
