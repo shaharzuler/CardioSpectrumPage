@@ -1,5 +1,6 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
 }
 
 
@@ -49,10 +50,14 @@ body {
 
 .publication-title {
     font-family: 'Google Sans', sans-serif;
+    font-size: 2rem; /* Default size for larger screens */
+
 }
 
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
+    font-size: 1rem; /* Default size for larger screens */
+
 }
 
 .publication-venue {
@@ -68,6 +73,7 @@ body {
 }
 
 .publication-authors {
+  color: hsl(204, 86%, 53%) !important;
 }
 
 .publication-authors a {
@@ -154,4 +160,37 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+
+/* Media queries for smaller screens */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .footer .icon-link {
+    font-size: 20px;
+  }
+
+  .publication-title {
+    font-size: 1.5rem;
+  }
+
+  .publication-authors {
+    font-size: 0.875rem;
+  }
+
+  .publication-venue,
+  .publication-awards {
+    font-size: 0.75rem;
+  }
+
+  .teaser .hero-body {
+    padding-bottom: 2rem;
+  }
+
+  .results-carousel .item {
+    font-size: 0.75rem;
+  }
 }
